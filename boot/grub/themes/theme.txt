@@ -1,0 +1,70 @@
+# GRUB2
+
+desktop-image: "background.png"
+desktop-color: "#000"
+title-text:""
+title-color: "#ffffff"
+
+
++ label {
+    text = "VHDBOOT 3.6.6"
+    color = "#fff"
+    left = 1%
+    top = 1%
+    height = 20
+    width = 400
+    align = "left"
+}
+
++ label {
+    text = "选择要启动的选项"
+    color = "#fff"
+    top = 30%-30
+    left = 50%-80
+    align = "center"
+    width = 160
+    height = 40
+}
+
++ label {
+    text = "www.vhdpve.com"
+    color = "#fff"
+    top = 100%-30
+    left = 50%-80
+    align = "center"
+    width = 160
+    height = 40
+}
+
++ boot_menu {
+    left = 20%
+    width = 60%
+    top = 30%
+    height = 40%
+    icon_width = 26
+    icon_height = 26
+    item_height = 30
+    item_padding = 1
+    item_icon_space = 6
+    item_spacing = 35
+    menu_pixmap_style = "boot_menu_*.png"
+    item_color = "#fff"
+    item_pixmap_style = "item_*.png"
+    selected_item_color = "#bfa"
+    selected_item_pixmap_style = "select_*.png"
+    scrollbar = true
+    scrollbar_width = 20
+    scrollbar_thumb = "slider_*.png"
+}
+
+
++ progress_bar {
+        id = "__timeout__"
+        top = 80%
+        left = 30%
+        width = 40%
+        bar_style = "box_*.png"
+        highlight_style = "box_*.png"
+        text = "启动项将在 %d 秒后执行..."
+        text_color = "#fff"
+}

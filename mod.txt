@@ -1,0 +1,1 @@
+chain configfile cpio echo exfat fat ntfs ext2 fb gzio halt help linux loopback lzopio map memdisk newc normal ntboot part_gpt part_msdos reboot regexp search test gfxterm gfxmenu efi_gop efi_uga png usb_keyboard
